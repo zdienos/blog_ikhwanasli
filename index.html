@@ -353,13 +353,13 @@ a img {
     border: 0;
 }
 
-.xpost-body img {
+.xpost-body ximg {
     max-width: 100%;
     height: auto;
 }
 
 .post-body img {
-user-select: none;pointer-events: none;background: #fff;height: auto;max-width: 98%;margin-bottom: 2px;padding: 6px!important;box-shadow: 0 0 0 1px rgba(0,0,0,0.030), 0 1px 6px 0px rgba(0,0,0,0.10);
+background: #fff;height: auto;max-width: 98%;margin-bottom: 2px;padding: 6px!important;box-shadow: 0 0 0 1px rgba(0,0,0,0.030), 0 1px 6px 0px rgba(0,0,0,0.10);
 }
 
 .post img {
@@ -381,6 +381,55 @@ a {
 }
 
 
+iframe {
+    border: none;
+    overflow: hidden;
+}
+
+embed, iframe, object {
+    max-width: 100%;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.videoyoutube {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.resvideo {
+position: relative;
+max-width: 100%;
+margin: 20px auto;
+padding-bottom: 56%;
+padding-top: 30px;
+overflow: hidden;
+height: auto;
+}
+.resvideo iframe, .videoresp object, .videoresp embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+
 
 
 
@@ -394,7 +443,8 @@ a {
         </b:if>
 </b:if>
 
- 
+<!-- FancyBox CSS -->
+<link href='http://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css' rel='stylesheet' type='text/css'/>
 
 </head>
 <body>
@@ -1358,7 +1408,38 @@ a {
 
 <b:section class='footer' id='footer' preferred='yes' showaddelement='no'/>
 
+ 
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<!-- FancyBox 3 -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js'/>
+
+<script type='text/javascript'>
+//<![CDATA[
+$(document).ready(function(){
+$(".post-body a img").each(function(){
+var isImage = /\.(?:jpg|jpeg|gif|png)$/i.test( $(this).parent("a").attr("href") );
+
+if ( isImage ) {
+$(this).parent("a").attr('data-src', $(this).parent("a").attr("href"));
+$(this).parent("a").attr('data-fancybox', 'fancy-box' );
+}
+
+else {
+}
+});
+$("[data-fancybox]").fancybox({
+infobar : true,
+arrows : false,
+animationEffect : "fade",
+transitionEffect : "slide",
+speed : 300,
+margin : [40, 20]
+});
+});
+//]]>
+</script>
 
 
 </body>
