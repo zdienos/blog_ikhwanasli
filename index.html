@@ -15,6 +15,7 @@
 
         * {
             box-sizing: border-box;
+   			 user-select: none;
         }
 
         /* Style the body */
@@ -335,6 +336,51 @@ blockquote {
     padding: 1em 15px;
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+imddg, objddect, eddmbed {
+    border: none;
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+a img {
+    border: 0;
+}
+
+.xpost-body img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post-body img {
+user-select: none;pointer-events: none;background: #fff;height: auto;max-width: 98%;margin-bottom: 2px;padding: 6px!important;box-shadow: 0 0 0 1px rgba(0,0,0,0.030), 0 1px 6px 0px rgba(0,0,0,0.10);
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+
+a {
+    color: #1277cb;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.separator a {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
 
 
 
@@ -347,6 +393,8 @@ blockquote {
 </style>
         </b:if>
 </b:if>
+
+ 
 
 </head>
 <body>
@@ -843,7 +891,6 @@ blockquote {
     </div>
   </div>
 </b:includable>
-
         <b:includable id='nextprev'>
   <!-- zz matikan older and newer post button 
    <div class='blog-pager' id='blog-pager'>
@@ -872,7 +919,6 @@ blockquote {
 
   <div class='clear'/>
 </b:includable>
-
         <b:includable id='post' var='post'>
   <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
     <b:if cond='data:post.firstImageUrl'>
@@ -1311,5 +1357,9 @@ blockquote {
     </div>
 
 <b:section class='footer' id='footer' preferred='yes' showaddelement='no'/>
+
+
+
+
 </body>
 </html>
