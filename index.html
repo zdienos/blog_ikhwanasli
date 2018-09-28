@@ -69,6 +69,7 @@
             overflow: hidden;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
          }
+ 	
 
         /* Create two unequal columns that sits next to each other */
         /* Sidebar/left column */
@@ -83,19 +84,26 @@
             flex: 70%;
             background-color: white;
             padding: 10px 20px;
+			width: 100%;
         }
 
-        h1,
-        h2,
-        h3,
-        .h1,
-        .h2,
-        .h3 {
-            font-family: "Roboto Slab", sans-serif;
+        h1, h2, h3, .h1, .h2, .h3 {
+            font-family: "Roboto Slab", sans-serif;           
+            letter-spacing: 0;
+        }
+		
+		h1, .h1 {
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 0;
+        }
+
+ 		h2, .h2 {
             font-weight: 700;
             font-size: 24px;
             letter-spacing: 0;
         }
+
 
         /* Fake image, just for this example */
         .fakeimg {
@@ -156,7 +164,6 @@
 
         /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 700px) {
-
             .row,
             .navbar {
                 flex-direction: column;
@@ -180,6 +187,13 @@
    width: 100%;
 }
 
+ul {
+    list-style: square;
+}
+
+ul, ol {
+    margin: 0 0 1.5em 1.1538461538em;
+}
 
 
         .btn {
@@ -203,6 +217,18 @@
             background: #446CB3;
         }
 
+		.btn-merah {
+            background: #ad4f4f;
+        }
+
+		.btn-kuning {
+            background: #d3cb6f;
+        }
+
+		.btn-hijau {
+            background: #049372;
+        }
+
         .btn:hover {
             opacity: .9;
         }
@@ -216,6 +242,7 @@
             text-decoration: none;
             color: #2288bb;
         }
+
 .kotak {
     padding: 20px 20px 5px;
     margin-bottom: 20px;
@@ -242,6 +269,70 @@
     background: #e0b1b1;
     color: #ad4f4f;
     border: solid 1px #ad4f4f;
+}
+
+
+pre {
+    white-space: pre;
+    word-wrap: normal;
+    overflow: auto;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: monospace;
+	max-width:100%;
+}
+
+.post-body pre {
+    overflow: auto;
+    padding: 0;
+    border-radius: 3px;
+    background-color: #292e34;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: 1.4em;
+}
+
+
+code, kbd, tt, var {
+    font-family: "Courier 10 Pitch",Courier,monospace;
+    word-wrap: break-word;
+}
+
+.post-body {
+	width:100%;
+}
+
+.post-body .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 1.2em;
+    background: #2b2b2c;
+    color: #fff;
+    line-height: 1.5;
+    text-align: left;
+    word-spacing: 0;
+    font-family: monospace;
+    border-radius: 3px;
+}
+
+blockquote, q {
+    quotes: "" "";
+}
+
+blockquote {
+    border-left: 4px solid rgba(0,0,0,0.05);
+    margin: 0 1.1538461538em;
+    padding-left: 1.1538461538em;
+}
+
+.post-body blockquote {
+    background: #f7f7f7;
+    color: #888;
+    border-left: 7px solid rgba(0,0,0,0.15);
+    margin: 0;
+    padding: 1em 15px;
 }
 
 
@@ -788,13 +879,13 @@
 
     <a expr:name='data:post.id'/>
     <b:if cond='data:post.title'>
-      <h3 class='post-title entry-title' itemprop='name'>
+      <h1 class='post-title entry-title' itemprop='name'>
       <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
         <a expr:href='data:post.link ? data:post.link : data:post.url'><data:post.title/></a>
       <b:else/>
         <data:post.title/>
       </b:if>
-      </h3>
+      </h1>
     </b:if>
 
     <div class='post-header'>
