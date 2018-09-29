@@ -1,0 +1,85 @@
+Berikut ini shortcodes yang sudah dibuatkan:<br />
+<h2>
+Heading</h2>
+<h3>
+Sub Heading</h3>
+<h4>
+Minor Heading</h4>
+<span style="font-size: x-large;">Largest</span><br />
+<span style="font-size: large;">Large</span><br />
+Normal<br />
+<span style="font-size: x-small;">Small</span><br />
+<span style="font-size: xx-small;">Smallest</span><br />
+<br />
+<h2>
+Contoh Paragraf</h2>
+<div style="text-align: justify;">
+Ini adalah contoh paragraf, rata-kanan-kiri (justify), sudah ada kok di editor blogger. Ea eam labores imperdiet, apeirian democritum ei nam, doming neglegentur ad vis. Ne malorum ceteros feugait quo, ius ea liber offendit placerat, est habemus aliquyam legendos id. Eam no corpora maluisset definitiones, eam mucius malorum id. Quo ea idque commodo utroque, per ex eros etiam accumsan.</div>
+<br />
+<h2>
+Contoh Gambar</h2>
+<div class="separator" style="clear: both; text-align: center;">
+<a href="https://1.bp.blogspot.com/-nvjvnL5PExs/W64_jkltDBI/AAAAAAAAEgY/PlYjsw2QARo4i7lUn8mOmy9djTsSaG9TQCLcBGAs/s1600/tess.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="638" data-original-width="952" height="267" src="https://1.bp.blogspot.com/-nvjvnL5PExs/W64_jkltDBI/AAAAAAAAEgY/PlYjsw2QARo4i7lUn8mOmy9djTsSaG9TQCLcBGAs/s400/tess.jpg" width="400" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<h2>
+Kode-kode</h2>
+<pre><code class="hljs nginx">Mel putent quaeque an, ut postea melius denique sit. Officiis sensibus at mea, sea at labitur deserunt. Eam dicam congue soluta ut</code></pre>
+<br />
+<h2>
+Contoh Kutipan Paragraf</h2>
+<blockquote class="tr_bq">
+Eu mei solum oporteat eleifend, libris nominavi maiestatis duo at, quod dissentiet vel te. Legere prompta impedit id eum. Te soleat vocibus luptatum sed, augue dicta populo est ad, et consul diceret officiis duo. Et duo primis nostrum.</blockquote>
+<h2>
+UnOrdered List</h2>
+<ul>
+<li><a href="http:/#" target="_blank">Blogger templates</a></li>
+<li>Templates</li>
+<li>Blogs</li>
+<li><a href="http:/#" target="_blank">Layouts</a></li>
+<li>Skins</li>
+</ul>
+<h2>
+Ordered list</h2>
+<ol>
+<li>Login</li>
+<li><a href="http:/#" target="_blank">Visit Namina</a></li>
+<li>Download template</li>
+<li>Install</li>
+<li><a href="http:/#" target="_blank">Enjoy!</a></li>
+</ol>
+<h2>
+Tombol-tombol</h2>
+<div style="text-align: center;">
+<a class="btn btn-biru" href="https://www.blogger.com/blogger.g?blogID=322345505360612219#">DEMO</a>
+<a class="btn btn-merah" href="https://www.blogger.com/blogger.g?blogID=322345505360612219#">DOWNLOAD</a>
+<a class="btn btn-kuning" href="https://www.blogger.com/blogger.g?blogID=322345505360612219#">BELI</a>
+<a class="btn btn-hijau" href="https://www.blogger.com/blogger.g?blogID=322345505360612219#">INFO</a>
+
+
+</div>
+<br />
+<h2>
+Kotak (Bukan Band)</h2>
+<div class="kotak kotak-merah">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque recusandae quo assumenda quaerat quae incidunt eum eius,</div>
+<div class="kotak kotak-kuning">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque recusandae quo assumenda quaerat quae incidunt eum eius,</div>
+<div class="kotak kotak-hijau">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque recusandae quo assumenda quaerat quae incidunt eum eius,</div>
+<div class="kotak kotak-biru">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque recusandae quo assumenda quaerat quae incidunt eum eius,</div>
+<div class="kotak">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque recusandae quo assumenda quaerat quae incidunt eum eius,</div>
+<h2>
+Tabel</h2>
+<table><tbody>
+<tr><th><span style="font-family: inherit;">Table Header 1</span></th><th><span style="font-family: inherit;">Table Header 2</span></th><th><span style="font-family: inherit;">Table Header 3</span></th></tr>
+<tr><td><span style="font-family: inherit;">Division 1</span></td><td><span style="font-family: inherit;">Division 2</span></td><td><span style="font-family: inherit;">Division 3</span></td></tr>
+<tr class="even"><td><span style="font-family: inherit;">Division 1</span></td><td><span style="font-family: inherit;">Division 2</span></td><td><span style="font-family: inherit;">Division 3</span></td></tr>
+<tr><td><span style="font-family: inherit;">Division 1</span></td><td><span style="font-family: inherit;">Division 2</span></td><td><span style="font-family: inherit;">Division 3</span></td></tr>
+</tbody></table>
+<br />
