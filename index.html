@@ -12,11 +12,15 @@
 <b:skin>
 </b:skin>
 
-<style>
+<style type='text/css'>
         @import url("https://fonts.googleapis.com/css?family=Roboto Slab:300,400,500,700,900");
         * {
             box-sizing: border-box;
    			 user-select: none;
+ 			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select:none;
+			-o-user-select:none;
         }
         /* Style the body */
         body {
@@ -367,16 +371,23 @@ width: 100%;
 height: 100%;
 }
 </style>
+
 <b:if cond='data:blog.pageType == &quot;index&quot;'>
-        <b:if cond='data:blog.url == data:blog.homepageUrl'>
-<style>
+<b:if cond='data:blog.url == data:blog.homepageUrl'>
+<style type='text/css'>
 #Blog1 { display: none; }
 </style>
-        </b:if>
 </b:if>
+</b:if>
+
+<b:if cond='data:blog.url != data:blog.homepageUrl'>
 
 <!-- FancyBox CSS -->
 <link href='http://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css' rel='stylesheet' type='text/css'/>
+
+</b:if>
+
+
 
 &lt;!--</head>--&gt;&lt;/head&gt;
 <body>
@@ -1285,6 +1296,7 @@ height: 100%;
 <b:section class='footer' id='footer' preferred='yes' showaddelement='no'/>
 
 
+<b:if cond='data:blog.url != data:blog.homepageUrl'>
 <!-- jQuery -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -1313,6 +1325,12 @@ margin : [40, 20]
 });
 //]]>
 </script>
+</b:if>
+
+
+
+
+
 
 
 &lt;!--</body>--&gt;&lt;/body&gt;
